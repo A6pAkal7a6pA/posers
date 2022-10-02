@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 @@include('html/head.html', {
-	"title": "Main"
+	"title": "Swap"
 })
 
 <body>
-	<div class="wrapper">
+	<div class="wrapper swap">
 		@@include('pages/header.html')
+		<main class="container">
+			@@include('pages/filters.html')
+		</main>
 	</div>
-	<!-- <img src="@img/image.png" alt=""> -->
 	<script src="js/app.min.js"></script>
 </body>
 

@@ -3,7 +3,7 @@ import fonter from 'gulp-fonter';
 import ttf2woff2 from 'gulp-ttf2woff2';
 
 export const otfToTtf = () => {
-	return app.gulp.src(`${app.path.srcFolder}\fonts\*.otf`, {})
+	return app.gulp.src(`${app.path.srcFolder}/fonts/*.otf`, {})
 		.pipe(app.plugins.plumber(
 			app.plugins.notify.onError({
 				title: 'FONTS',
@@ -13,11 +13,11 @@ export const otfToTtf = () => {
 		.pipe(fonter({
 			formats: ['ttf']
 		}))
-		.pipe(app.gulp.dest(`${app.path.srcFolder}\fonts\\`));
+		.pipe(app.gulp.dest(`${app.path.srcFolder}/fonts/`));
 }
 
 export const ttfToWoff = () => {
-	return app.gulp.src(`${app.path.srcFolder}\fonts\*.ttf`, {})
+	return app.gulp.src(`${app.path.srcFolder}/fonts/*.ttf`, {})
 		.pipe(app.plugins.plumber(
 			app.plugins.notify.onError({
 				title: 'FONTS',
@@ -35,7 +35,7 @@ export const ttfToWoff = () => {
 
 export const fontsStyle = () => {
 	//Файл стилей подключения шрифтов
-	let fontsFile = `${app.path.srcFolder}/scss/fonts.scss`;
+	let fontsFile = `${app.path.srcFolder}/scss/config/fonts.scss`;
 	//Проверяем, существуют ли файлы шрифтов
 	fs.readdir(app.path.build.fonts, function (err, fontsFiles) {
 		if (fontsFiles) {

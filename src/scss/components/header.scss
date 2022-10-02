@@ -1,0 +1,74 @@
+.header {
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&__manage {
+		max-width: 250px;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__action {
+		display: flex;
+		align-items: center;
+		gap: 65px;
+	}
+
+	&__burger {
+		width: 24px;
+		height: 25px;
+		position: relative;
+		&::before,
+		&::after,
+		span {
+			content: "";
+			background-color: #000;
+			width: 100%;
+			height: 3px;
+			left: 0;
+
+			position: absolute;
+		}
+		&::before {
+			top: 0;
+		}
+		&::after {
+			top: 11px;
+		}
+		span {
+			top: 22px;
+		}
+	}
+
+	&__sublogo {
+		img {
+			max-width: 30px;
+		}
+	}
+
+	&__logo {
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 41px;
+		letter-spacing: -0.1em;
+		color: #000000;
+	}
+
+	&__info {
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 26px;
+		color: #000000;
+		&_nft {
+			font-weight: 700;
+		}
+	}
+	.button {
+		padding: 19px 44px;
+		//TODO bg from style
+	}
+}

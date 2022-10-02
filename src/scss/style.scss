@@ -1,1 +1,41 @@
-@import "fonts.scss";
+@import "./config/nullable.scss";
+@import "./config/config.scss";
+@import "./components/button.scss";
+@import "./components/header.scss";
+@import "./components/filters.scss";
+
+.swap {
+	padding: 80px 0 0 0;
+}
+
+.header .button {
+	background: url('@img/button-frame.svg') no-repeat;
+	background-position: center;
+	background-size: contain, auto;
+	position: relative;
+	&::after {
+		content: '';
+		position: absolute;
+		width: 96.2%;
+		height: 96.5%;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 0;
+		background: #9eca58;
+		z-index: -1;
+	}
+}
+.filters__item {
+	background: url('@img/button-frame.svg') center / contain no-repeat;
+	position: relative;
+	&::after {
+		content: '';
+		position: absolute;
+		width: 96.2%;
+		height: 96.5%;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 0;
+		z-index: -1;
+	}
+}
