@@ -16,7 +16,7 @@ export const images = () => {
 		.pipe(app.plugins.newer(app.path.build.images))
 		.pipe(imagemin({
 			progressive: true,
-			svgPlugins: [{ removeViewBox: false }],
+			svgoPlugins: [{ removeViewBox: false }],
 			interlaced: true,
 			optimizationLevel: 3 //0 to 7
 		}))

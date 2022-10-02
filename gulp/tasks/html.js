@@ -13,10 +13,7 @@ export const html = () => {
 		))
 		.pipe(fileInclude())
 		.pipe(app.plugins.replace(/@img\//g, 'img/'))
-		.pipe(app.plugins.if(
-			app.isBuild,
-			webpHtmlNosvg()
-		))
+		.pipe(webpHtmlNosvg())
 		.pipe(app.plugins.if(
 			app.isBuild,
 			versionNumber({

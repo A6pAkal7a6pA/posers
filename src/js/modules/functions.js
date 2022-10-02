@@ -1,8 +1,9 @@
 export function isWebp() {
 	function testWebp(callback) {
 		let webp = new Image();
-		webp.onload = webp.onerror = () => callback(webp.height == 2);
-		webp.src = 'data:image/webp;base64,UklGRkAAAABXRUJQVlA4IDQAAADwAQCdASoBAAEAAQAcJaACdLoB+AAETAAA/vW4f/6aR40jxpHxcP/ugT90CfugT/3NoAAA';
+		console.log(webp);
+		webp.onload = webp.onerror = () => callback(webp.height > 0);
+		webp.src = 'data:image/webp;base64,UklGRjIAAABXRUJQVlA4ICYAAACyAgCdASoCAAEALmk0mk0iIiIiIgBoSygABc6zbAAA/v56QAAAAA==';
 	}
 	testWebp(function(support) {
 		let className = support === true ? 'webp' : 'no-webp';
