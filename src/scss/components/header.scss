@@ -1,4 +1,5 @@
 .header {
+	margin-bottom: 55px;
 	&__inner {
 		display: flex;
 		align-items: center;
@@ -65,10 +66,15 @@
 		color: #000000;
 		&_nft {
 			font-weight: 700;
+			text-decoration-line: underline;
 		}
 	}
 	.button {
 		padding: 19px 44px;
+		background-color: #9eca58;
+		&::after {
+			content: '';
+		}
 		//TODO bg from style
 	}
 }
