@@ -1,0 +1,47 @@
+<svg width="74" height="64" viewBox="0 0 74 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="5" width="64" height="5" fill="black"/>
+<rect x="5" y="59" width="64" height="5" fill="black"/>
+<rect x="69" y="5" width="5" height="54" fill="black"/>
+<rect y="5" width="5" height="54" fill="black"/>
+<rect x="5" y="5" width="64" height="54" fill="#4ABEFF"/>
+<rect opacity="0.3" x="64" y="5" width="5" height="49" fill="black"/>
+<rect opacity="0.3" x="5" y="54" width="64" height="5" fill="black"/>
+<rect x="21" y="17" width="4" height="4" fill="white"/>
+<rect x="17" y="17" width="4" height="4" fill="white"/>
+<rect x="21" y="21" width="4" height="4" fill="white"/>
+<rect x="25" y="25" width="4" height="4" fill="white"/>
+<rect x="21" y="29" width="4" height="4" fill="white"/>
+<rect x="25" y="33" width="4" height="4" fill="white"/>
+<rect x="33" y="25" width="4" height="4" fill="white"/>
+<rect x="37" y="21" width="4" height="4" fill="white"/>
+<rect x="37" y="17" width="4" height="4" fill="white"/>
+<rect x="41" y="17" width="4" height="4" fill="white"/>
+<rect x="45" y="17" width="4" height="4" fill="white"/>
+<rect x="45" y="13" width="4" height="4" fill="white"/>
+<rect x="41" y="13" width="4" height="4" fill="white"/>
+<rect x="49" y="25" width="4" height="4" fill="white"/>
+<rect x="49" y="17" width="4" height="4" fill="white"/>
+<rect x="53" y="21" width="4" height="4" fill="white"/>
+<rect x="45" y="21" width="4" height="4" fill="white"/>
+<rect x="41" y="21" width="4" height="4" fill="white"/>
+<rect x="41" y="25" width="4" height="4" fill="white"/>
+<rect x="37" y="25" width="4" height="4" fill="white"/>
+<rect x="45" y="25" width="4" height="4" fill="white"/>
+<rect x="45" y="29" width="4" height="4" fill="white"/>
+<rect x="41" y="33" width="4" height="4" fill="white"/>
+<rect x="37" y="37" width="4" height="4" fill="white"/>
+<rect x="29" y="41" width="4" height="4" fill="white"/>
+<rect x="29" y="37" width="4" height="4" fill="white"/>
+<rect x="33" y="37" width="4" height="4" fill="white"/>
+<rect x="33" y="33" width="4" height="4" fill="white"/>
+<rect x="29" y="33" width="4" height="4" fill="white"/>
+<rect x="25" y="29" width="4" height="4" fill="white"/>
+<rect x="29" y="29" width="4" height="4" fill="white"/>
+<rect x="33" y="29" width="4" height="4" fill="white"/>
+<rect x="37" y="29" width="4" height="4" fill="white"/>
+<rect x="41" y="29" width="4" height="4" fill="white"/>
+<rect x="37" y="33" width="4" height="4" fill="white"/>
+<rect x="25" y="41" width="4" height="4" fill="white"/>
+<rect x="25" y="21" width="4" height="4" fill="white"/>
+<rect x="29" y="25" width="4" height="4" fill="white"/>
+</svg>

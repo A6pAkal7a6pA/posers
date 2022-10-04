@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title": "Swap"
+})
+
+<body>
+	<div class="wrapper">
+		<main class="main">
+			<div class="main__inner">
+				@@include('html/connect_wallet.html')
+				<div class="main__customize customize">
+					@@include('html/customize_head.html')
+					<div class="customize-welcome">
+						<div class="customize-welcome__text">
+							Welcome to our <span class="bold">customiser tool</span> where you can build your own <span
+								class="bold">custom poser</span> from start to finish, choosing
+							among the traits that we have in the main collections plus some new traits that were created exclusively
+							for this tool!
+						</div>
+						<div class="customize-welcome__text">
+							These <span class="bold">posers</span>, if you choose to mint them, will be a part of a separate
+							collection.
+						</div>
+					</div>
+					<div class="customize-switchers">
+						<div class="customize-switchers__item customize-switchers__item_prev button">
+							<img src="@img/icons/shevron-left.svg" alt="left">
+						</div>
+						<div class="customize-switchers__item customize-switchers__item_next button">
+							<img src="@img/icons/shevron-left.svg" alt="right">
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

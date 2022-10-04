@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title": "Swap"
+})
+
+<body>
+	<div class="wrapper">
+		<main class="main">
+			<div class="main__inner">
+				@@include('html/connect_wallet.html')
+				<div class="main__customize customize">
+					@@include('html/customize_head.html')
+
+					<div class="customize-important">
+						<div class="customize-important__title">
+							Before start, please read these important things to note:
+						</div>
+						<div class="customize-important__texts">
+							<div class="customize-important__text">
+								This customiser is available for <span class="bold">posers genesis collection holders only;</span>
+							</div>
+							<div class="customize-important__text">
+								You can only mint ONE <span class="bold">customised poser</span> per <span class="bold">Genesis
+									poser</span> that you own from the Genesis collection. Thus,
+								when buying a poser from the secondary market, don’t forget to check if she has already been used for
+								minting a customised poser here:
+							</div>
+						</div>
+						<div class="customize-important__checker">
+							<div class="customize-important__input">
+								<input type="text">
+							</div>
+							<button class="customize-important__button button">
+								<div class="button__text">check</div>
+							</button>
+						</div>
+					</div>
+
+					<div class="customize-switchers">
+						<div class="customize-switchers__item customize-switchers__item_prev button">
+							<img src="@img/icons/shevron-left.svg" alt="left">
+						</div>
+						<div class="customize-switchers__item customize-switchers__item_next button">
+							<img src="@img/icons/shevron-left.svg" alt="right">
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+.connect {
+	max-width: 596px;
+	position: relative;
+	background: #f5f5f5;
+	&::before,
+	&::after {
+		content: "";
+		width: 5px;
+		height: 5px;
+		position: absolute;
+		left: 0;
+		background: #000;
+	}
+	&::before {
+		top: -5px;
+	}
+	&::after {
+		bottom: -5px;
+	}
+	&__inner {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 24px;
+		border-style: solid;
+		border-width: 5px;
+		border-color: #000;
+		border-image-slice: 2;
+		border-image-width: 1;
+		border-image-outset: 0;
+		border-image-source: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6'><path d='M0 2h2v2H0zM2 0h2v2H2zM4 2h2v2H4zM2 4h2v2H2z' fill='%23000' /></svg>");
+		background-clip: padding-box;
+		background-origin: content-box;
+		padding: 13px 28px;
+		position: relative;
+		&::before,
+		&::after {
+			content: "";
+			width: 5px;
+			height: 5px;
+			position: absolute;
+			right: 0;
+			background: #000;
+		}
+		&::before {
+			top: -5px;
+		}
+		&::after {
+			bottom: -5px;
+		}
+	}
+
+	&__soon {
+		max-width: 144px;
+		width: 100%;
+		position: absolute;
+		left: 16px;
+		top: -5px;
+		text-align: center;
+		background: #f5f5f5;
+		z-index: 2;
+		transform: translateY(-50%);
+	}
+
+	&__burger {
+	}
+	&__name {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+	}
+
+	&__logo {
+		img {
+		}
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 41px;
+		letter-spacing: -0.1em;
+		color: #000000;
+	}
+
+	&__button {
+		background-color: #ff7934;
+		padding: 14px 29px;
+	}
+}
+.button {
+	&__text {
+	}
+}

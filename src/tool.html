@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title": "Tool"
+})
+
+<body>
+	<div class="wrapper">
+		<main class="main">
+			<div class="main__inner">
+				@@include('html/connect_wallet.html')
+				<div class="main__customize customize">
+					<div class="customize__head">
+						<div class="customize__title"></div>
+						<div class="customize__heart"></div>
+						<div class="customize__image">
+							<img src="@img/customize_head_logo.png" alt="customize logo">
+						</div>
+					</div>
+
+					<div class="customize__line"></div>
+
+					<div class="customize__body">
+						<div class="customize__choose choose-slider swiper">
+							<div class="choose-slider__wrapper swiper-wrapper">
+								<div class="choose-slider__item swiper-item">
+									bg
+								</div>
+								<div class="choose-slider__item swiper-item">
+									eyes
+								</div>
+								<div class="choose-slider__item swiper-item">
+									hairstyle
+								</div>
+								<div class="choose-slider__item swiper-item">
+									outfit
+								</div>
+							</div>
+						</div>
+						
+						<div class="customize__preview">
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>

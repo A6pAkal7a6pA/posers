@@ -1,0 +1,25 @@
+.burger {
+	width: 24px;
+	height: 25px;
+	position: relative;
+	&::before,
+	&::after,
+	span {
+		content: "";
+		background-color: #000;
+		width: 100%;
+		height: 3px;
+		left: 0;
+
+		position: absolute;
+	}
+	&::before {
+		top: 0;
+	}
+	&::after {
+		top: 11px;
+	}
+	span {
+		top: 22px;
+	}
+}

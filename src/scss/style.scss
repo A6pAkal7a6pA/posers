@@ -1,20 +1,41 @@
 @import "./config/nullable.scss";
 @import "./config/config.scss";
+@import "./components/burger.scss";
 @import "./components/button.scss";
 @import "./components/header.scss";
 @import "./components/filters.scss";
 @import "./components/market.scss";
 @import "./components/summary.scss";
 @import "./pages/swap.scss";
+@import "./components/connect_wallet.scss";
+@import "./components/doodles.scss";
+@import "./components/customize_head.scss";
+@import "./pages/main.scss";
+@import "./pages/welcome_screen.scss";
+@import "./components/customize_important.scss";
 
+
+.wrapper {
+	height: 100%;
+	width: 100%;
+	min-height: 100vh;
+}
 .swap {
 	padding: 80px 0 0 0;
 }
+.main {
+	width: 100%;
+	background: #f5f5f5;
+	padding: 57px 0 0 0;
+	&__inner {
+
+	}
+}
 .filters__item {
-	background: url('@img/button-frame.svg') center / contain no-repeat;
+	background: url("@img/button-frame.svg") center / contain no-repeat;
 	position: relative;
 	&::after {
-		content: '';
+		content: "";
 		position: absolute;
 		width: 96.2%;
 		height: 96.5%;
@@ -23,4 +44,11 @@
 		top: 0;
 		z-index: -1;
 	}
+}
+
+.bold {
+	font-weight: 700;	
+}
+.underline {
+	text-decoration: underline;
 }

@@ -1,0 +1,27 @@
+.customize-head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 15px 30px;
+	border-bottom: 5px solid rgba(#000000, 0.1);
+
+	&__title {
+		font-weight: 700;
+		font-size: 24px;
+		line-height: 31px;
+		letter-spacing: -0.1em;
+		max-width: 188px;
+		color: #000000;
+	}
+
+	&__heart {
+
+	}
+
+	&__image {
+		max-width: 188px;
+		display: flex;
+		justify-content: flex-end;
+		width: 100%;
+	}
+}
