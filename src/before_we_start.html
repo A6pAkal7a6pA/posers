@@ -7,11 +7,16 @@
 <body>
 	<div class="wrapper">
 		<main class="main">
+			<div class="frame-info red">
+				<div class="frame-info__text">
+					this poser #2 has a minted customized poser
+				</div>
+				<div class="frame-info__press">ok</div>
+			</div>
 			<div class="main__inner">
 				@@include('html/connect_wallet.html')
 				<div class="main__customize customize">
 					@@include('html/customize_head.html')
-
 					<div class="customize-important">
 						<div class="customize-important__title">
 							Before start, please read these important things to note:
@@ -29,6 +34,7 @@
 						</div>
 						<div class="customize-important__checker">
 							<div class="customize-important__input">
+								<div class="customize-important__placeholder">id:</div>
 								<input type="text">
 							</div>
 							<button class="customize-important__button button">
@@ -45,6 +51,11 @@
 							<img src="@img/icons/shevron-left.svg" alt="right">
 						</div>
 					</div>
+
+					<button class="customize__next button">
+						<div class="button__text">LFG</div>
+					</button>
+
 				</div>
 			</div>
 		</main>
