@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/head.html', {
+"title": "Main"
+})
+
+<body>
+	<div class="wrapper">
+		<main class="main">
+			<div class="main__inner">
+				<div class="main__content">
+					<div class="main__info">
+						@@include('html/connect_wallet.html')
+						@@include('html/doodles.html')
+						<div class="main__texts">
+							<div class="main__text">
+								<span class="bold">POSers</span> are 5555 fancy dudes living on the blockchain. They're cool, they're
+								diverse, they're pixelated,
+								they're ON-CHAIN! Who are you - Human, Ape, Vampire, or Alien?
+							</div>
+							<div class="main__text">
+								<span class="bold">POSers</span> are the first on-chain PFP collection launched since the Ethereum
+								Network transitioned from Proof
+								of Work to <span class="bold underline">Proof of Stake.</span>
+							</div>
+						</div>
+
+						<div class="main__switchers">
+							<div class="main__switch">
+								<img src="@img/switcher1.svg" alt="switcher">
+							</div>
+							<div class="main__switch">
+								<img src="@img/switcher2.svg" alt="switcher">
+							</div>
+						</div>
+
+						<div class="main__progressbar progressbar">
+							<div class="progressbar__inner">
+								<div class="progressbar__line">
+								</div>
+								<div class="progressbar__filler">
+									<div class="progressbar__point"></div>
+								</div>
+							</div>
+							<div class="progressbar__count">
+								x <span class="progressbar__number">10</span>
+							</div>
+						</div>
+
+						<div class="main__contacts contacts">
+							<div class="contacts__inner">
+								<div class="contacts__item">
+									<img src="@img/contacts/twitter.svg" alt="contact">
+								</div>
+								<div class="contacts__item">
+									<img src="@img/contacts/opensea.svg" alt="contact">
+								</div>
+								<div class="contacts__item">
+									<img src="@img/contacts/discord.svg" alt="contact">
+								</div>
+								<div class="contacts__item">
+									<img src="@img/contacts/medium.svg" alt="contact">
+								</div>
+							</div>
+							<button class="contacts__button button">
+								<div class="button__text">sold out</div>
+							</button>
+						</div>
+
+					</div>
+					<div class="main__profile">
+						<div class="main__avatars avatars">
+							<div class="avatars__inner">
+								<div class="avatars__image">
+									<img src="@img/avatar.png" alt="avatar">
+								</div>
+								<div class="avatars__actions">
+									<div class="avatars__action avatars__action_prev">
+										<img src="@img/icons/shevron-left.svg" alt="arrow">
+									</div>
+									<div class="avatars__action avatars__action_next">
+										<img src="@img/icons/shevron-right.svg" alt="arrow">
+									</div>
+									<div class="avatars__action avatars__action_prev_download">
+										<img src="@img/icons/download.svg" alt="download">
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="main__descriptions main-description">
+							<div class="main-description__item">
+								<div class="main-description__key">TOTAL SUPPLY</div>
+								<div class="main-description__separator"></div>
+								<div class="main-description__value">5555</div>
+							</div>
+							<div class="main-description__item">
+								<div class="main-description__key">NFTS</div>
+								<div class="main-description__separator"></div>
+								<div class="main-description__value">24px avatars</div>
+							</div>
+							<div class="main-description__item">
+								<div class="main-description__key">BLOCKCHAIN</div>
+								<div class="main-description__separator"></div>
+								<div class="main-description__value">Ethereum Mainnet</div>
+							</div>
+							<div class="main-description__item">
+								<div class="main-description__key">NFT STANDARD</div>
+								<div class="main-description__separator"></div>
+								<div class="main-description__value">ERC-721A</div>
+							</div>
+							<div class="main-description__item">
+								<div class="main-description__key">ROYALTY FEE</div>
+								<div class="main-description__separator"></div>
+								<div class="main-description__value">5%</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="main__copyright copyright">
+					<div class="copyright__inner">
+						Mint is only available to real POSers. We use an anti-bot system for mint. Be careful.
+					</div>
+				</div>
+			</div>
+		</main>
+	</div>
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
