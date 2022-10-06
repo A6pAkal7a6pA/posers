@@ -51,7 +51,10 @@
 		&_prev {
 		}
 		&_next {
-			transform: rotate(-180deg);
+		}
+		img {
+			width: 12px;
+			height: 21px;
 		}
 	}
 }

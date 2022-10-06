@@ -90,6 +90,7 @@
 			top: 50%;
 			transform: translateY(-50%);
 			background: rgba(#000000, 0.3);
+			z-index: 2;
 		}
 		&::before {
 			left: 0;
@@ -100,19 +101,35 @@
 	}
 
 	&__line {
+		position: absolute;
+		background: rgba(#000000, 0.1);
+		width: 100%;
+		height: 100%;
+	}
+	&__filler {
+		position: absolute;
 		background: #9eca58;
 		width: 50%; //TODO action on js
 		height: 100%;
-		&::before {
-			content: "";
-			position: absolute;
-			background: rgba(#000000, 0.1);
-			width: 100%;
-			height: 100%;
-		}
 	}
 
 	&__point {
+		position: absolute;
+		width: 25px;
+		height: 25px;
+		background-color: #9eca58;
+		border-style: solid;
+		border-width: 5px;
+		border-color: #000;
+		border-image-slice: 2;
+		border-image-width: 1;
+		border-image-outset: 0;
+		border-image-source: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6'><path d='M0 2h2v2H0zM2 0h2v2H2zM4 2h2v2H4zM2 4h2v2H2z' fill='%23000' /></svg>");
+		background-clip: padding-box;
+		background-origin: content-box;
+		right: 0;
+		top: 50%;
+		transform: translate(50%, -50%);
 	}
 
 	&__count {
@@ -213,6 +230,17 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		position: relative;
+		&::before {
+			content: "";
+			position: absolute;
+			z-index: 0;
+			bottom: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			box-shadow: inset -4px -4px rgba($color: #000000, $alpha: 0.3);
+		}
 		&_prev {
 			img {
 				height: 27px;
@@ -224,7 +252,6 @@
 			img {
 				height: 27px;
 				width: 15px;
-				transform: rotate(-180deg);
 			}
 		}
 
