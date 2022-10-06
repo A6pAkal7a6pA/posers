@@ -1,5 +1,5 @@
 .header {
-	margin-bottom: 55px;
+	margin-bottom: 62px;
 	&__inner {
 		display: flex;
 		align-items: center;
@@ -47,7 +47,7 @@
 		padding: 19px 44px;
 		background-color: #9eca58;
 		&::after {
-			content: '';
+			content: "";
 		}
 		//TODO bg from style
 	}
