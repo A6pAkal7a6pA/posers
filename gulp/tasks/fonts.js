@@ -74,6 +74,7 @@ export const fontsStyle = () => {
 		}
 	});
 	return app.gulp.src(`${app.path.srcFolder}`);
+
 	function cb() { }
 }
 

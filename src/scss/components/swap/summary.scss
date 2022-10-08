@@ -149,4 +149,18 @@
 			background: #000000;
 		}
 	}
+	@media (max-width: 1630px) {
+		padding: 24px 15px;
+		max-width: 250px;
+	}
+
+	@media (max-width: 1060px) {
+		max-width: 230px;
+		padding: 24px 10px;
+		&__items {
+			&_after {
+				padding: 16px 8px;
+			}
+		}
+	}
 }

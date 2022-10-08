@@ -81,4 +81,21 @@
 
 	&__coin {
 	}
+	@media (max-width: 1500px) {
+		gap: 24px 15px;
+		max-width: 860px;
+	}
+
+	@media (max-width: 1440px) {
+		max-width: 810px;
+		&__item {
+			max-width: 150px;
+		}
+	}
+	@media (max-width: 1390px) {
+		max-width: 645px;
+	}
+	@media (max-width: 1225px) {
+		max-width: 480px;
+	}
 }

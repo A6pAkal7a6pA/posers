@@ -14,4 +14,10 @@
 		text-align: left;
 		width: 100%;
 	}
+	@media (max-width: 1630px) {
+		padding: 23px 15px 30px 15px;
+		&__title {
+			margin-bottom: 20px;
+		}
+	}
 }
