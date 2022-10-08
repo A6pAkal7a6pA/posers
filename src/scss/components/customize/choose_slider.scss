@@ -1,0 +1,40 @@
+.choose-slider {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 32px;
+	position: relative;
+	&__wrapper {
+		display: flex;
+		gap: 16px;
+		margin: 0 auto;
+		max-width: 411px;
+		overflow: hidden;
+	}
+
+	&__item {
+		padding: 11px 15px;
+		&_choosen {
+			background-color: #9ECA58;
+		}
+		&_disabled {
+			opacity: 0.3;
+		}
+	}
+	&__arrows {
+	}
+	&__arrow {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	&__prev {
+		left: 0;
+	}
+	&__next {
+		transform: translateY(-50%);
+		right: 0;
+	}
+}

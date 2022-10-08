@@ -1,0 +1,21 @@
+.customize-switchers {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 32px;
+	&__item {
+		width: 50px;
+		height: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&_prev {
+		}
+		&_next {
+		}
+		img {
+			width: 12px;
+			height: 21px;
+		}
+	}
+}

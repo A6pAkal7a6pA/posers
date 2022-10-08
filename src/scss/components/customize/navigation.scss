@@ -1,0 +1,23 @@
+.customize-navigation {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	.button {
+		gap: 8px;
+		padding: 11px 16px;
+		max-width: 110px;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&_disabled {
+			opacity: 0.3;
+		}
+		&__text {
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 18px;
+			color: #000000;
+		}
+	}
+}

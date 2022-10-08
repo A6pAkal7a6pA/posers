@@ -1,0 +1,48 @@
+.customize-preview {
+	flex: 1 1 50%;
+	&__head {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 18px;
+		color: rgba(#000000, 0.3);
+		margin-bottom: 22px;
+	}
+
+	&__title {
+	}
+
+	&__selected {
+	}
+
+	&__filters {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 16px 24px;
+		margin-bottom: 32px;
+	}
+
+	&__filter {
+		display: flex;
+		font-size: 14px;
+		line-height: 18px;
+		gap: 4px;
+		align-items: center;
+	}
+
+	&__filter-key {
+		color: rgba(#000000, 0.3);
+	}
+
+	&__filter-value {
+		color: #000000;
+		font-weight: 700;
+	}
+
+	&__image {
+		margin-bottom: 50px;
+		max-height: 300px;
+	}
+}

@@ -1,0 +1,14 @@
+.customize-mints {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	.button {
+		max-width: 110px;
+		width: 100%;
+		padding: 11px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-color: #ff8ed9;
+	}
+}

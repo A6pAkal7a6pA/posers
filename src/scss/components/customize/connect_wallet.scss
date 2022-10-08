@@ -1,14 +1,14 @@
 .connect {
-	border: solid 4px black;
-	border-image-outset: 0;
-	border-image-width: 5px;
+	border: solid 5px black;
+	border-image-width: 10px;
 	border-image-slice: 10;
+	max-width: 596px;
 	&__inner {
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		gap: 24px;
-		padding: 13px 28px;
+		padding: 18px 28px;
 		position: relative;
 	}
 

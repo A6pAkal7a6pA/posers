@@ -1,0 +1,54 @@
+.ham-menu {
+	background: #222529;
+	padding: 95px 200px;
+	z-index: 10;
+	width: 100%;
+	left: 0;
+	top: 0;
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	&__inner {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 100px;
+	}
+
+	&__exit {
+		width: 27px;
+		height: 27px;
+	}
+
+	&__list {
+		display: flex;
+		align-items: center;
+		gap: 32px;
+	}
+	&__link {
+		font-weight: 700;
+		font-size: 18px;
+		line-height: 23px;
+		color: rgba(#ffffff, 0.3);
+	}
+
+	&__item {
+		position: relative;
+		&_active {
+			&::before {
+				content: "";
+				position: absolute;
+				height: 34px;
+				width: 25px;
+				left: 30px;
+				top: -20px;
+				transform: translateY(-50%);
+				background: url("../img/icons/fire.svg") center / cover no-repeat;
+			}
+			a {
+				color: #ffffff;
+			}
+		}
+	}
+}

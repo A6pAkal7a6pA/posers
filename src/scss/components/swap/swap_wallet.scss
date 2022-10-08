@@ -1,0 +1,17 @@
+.swap-wallet {
+	padding: 23px 40px 45px 40px;
+	&__title {
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 18px;
+		color: #7a7c7f;
+		margin-bottom: 24px;
+	}
+
+	&__button {
+		padding: 11px 19px;
+		max-width: 325px;
+		text-align: left;
+		width: 100%;
+	}
+}

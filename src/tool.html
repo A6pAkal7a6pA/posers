@@ -8,146 +8,21 @@
 	<div class="wrapper">
 		<main class="main">
 			<div class="main__inner">
-				@@include('html/connect_wallet.html')
+				@@include('html/customize/connect_wallet.html')
 				<div class="main__customize customize">
-					@@include('html/customize_head.html')
+					@@include('html/customize/head.html')
 
 					<div class="customize-gallery">
+
 						<div class="customize-traits">
 							<div class="customize-traits__title">choose traits</div>
-							<div class="customize__choose choose-slider swiper">
-								<div class="choose-slider__wrapper swiper-wrapper">
-									<div class="choose-slider__item swiper-slide button">
-										bg
-									</div>
-									<div class="choose-slider__item swiper-slide button">
-										eyes
-									</div>
-									<div class="choose-slider__item swiper-slide button">
-										hairstyle
-									</div>
-									<div class="choose-slider__item swiper-slide button">
-										outfit
-									</div>
-								</div>
-								<div class="choose-slider__arrows">
-									<div class="choose-slider__arrow choose-slider__prev swiper-button-prev">
-										<img src="@img/icons/shevron-left.svg" alt="shevron-left">
-									</div>
-									<div class="choose-slider__arrow choose-slider__next swiper-button-next">
-										<img src="@img/icons/shevron-right.svg" alt="shevron-right">
-									</div>
-								</div>
-							</div>
-
-							<div class="customize-miniatures">
-								<div class="customize-miniatures__item">
-									<img src="@img/miniature.png" alt="miniature">
-								</div>
-								<div class="customize-miniatures__item">
-									<img src="@img/miniature.png" alt="miniature">
-								</div>
-								<div class="customize-miniatures__item">
-									<img src="@img/miniature.png" alt="miniature">
-								</div>
-								<div class="customize-miniatures__item">
-									<img src="@img/miniature.png" alt="miniature">
-								</div>
-								<div class="customize-miniatures__item">
-									<img src="@img/miniature.png" alt="miniature">
-								</div>
-								<div class="customize-miniatures__item">
-									<img src="@img/miniature.png" alt="miniature">
-								</div>
-								<div class="customize-miniatures__item">
-									<img src="@img/miniature.png" alt="miniature">
-								</div>
-								<div class="customize-miniatures__item">
-									<img src="@img/miniature.png" alt="miniature">
-								</div>
-								<div class="customize-miniatures__item">
-									<img src="@img/miniature.png" alt="miniature">
-								</div>
-								<div class="customize-miniatures__item">
-									<img src="@img/miniature.png" alt="miniature">
-								</div>
-								<div class="customize-miniatures__item">
-									<img src="@img/miniature.png" alt="miniature">
-								</div>
-								<div class="customize-miniatures__item">
-									<img src="@img/miniature.png" alt="miniature">
-								</div>
-							</div>
-
-							<div class="customize-navigation">
-								<div class="customize-navigation__button button button_disabled">
-									<img src="@img/icons/arrow-back.svg" alt="arrow">
-									<div class="button__text">back</div>
-								</div>
-								<div class="customize-navigation__button button">
-									<div class="button__text">reset</div>
-								</div>
-								<div class="customize-navigation__button button">
-									<div class="button__text">next</div>
-									<img src="@img/icons/arrow-next.svg" alt="arrow">
-								</div>
-							</div>
+							@@include('html/customize/choose_slider.html')
+							@@include('html/customize/miniatures.html')
 						</div>
 
 						<div class="customize-gallery__line"></div>
 
-						<div class="customize-preview">
-							<div class="customize-preview__head">
-								<div class="customize-preview__title">preview</div>
-								<div class="customize-preview__selected">selected traits</div>
-							</div>
-							<div class="customize-preview__filters">
-								<div class="customize-preview__filter">
-									<div class="customize-preview__filter-key">bg</div>
-									<div class="customize-preview__filter-value">silent</div>
-								</div>
-								<div class="customize-preview__filter">
-									<div class="customize-preview__filter-key">eyes</div>
-									<div class="customize-preview__filter-value">leon</div>
-								</div>
-								<div class="customize-preview__filter">
-									<div class="customize-preview__filter-key">hairstyle</div>
-									<div class="customize-preview__filter-value">black ponytail</div>
-								</div>
-								<div class="customize-preview__filter">
-									<div class="customize-preview__filter-key">mouth</div>
-									<div class="customize-preview__filter-value">meh</div>
-								</div>
-								<div class="customize-preview__filter">
-									<div class="customize-preview__filter-key">outfit</div>
-									<div class="customize-preview__filter-value">ruby</div>
-								</div>
-								<div class="customize-preview__filter">
-									<div class="customize-preview__filter-key">skin</div>
-									<div class="customize-preview__filter-value">purple</div>
-								</div>
-								<div class="customize-preview__filter">
-									<div class="customize-preview__filter-key">type</div>
-									<div class="customize-preview__filter-value">female</div>
-								</div>
-							</div>
-							<div class="customize-preview__image">
-								<img src="@img/preview.png" alt="preview">
-							</div>
-							<div class="customize-mints">
-								<div class="customize-downloader">
-									<div class="customize-downloader__input">
-										<input type="text" placeholder="name your poser">
-									</div>
-									<div class="customize-downloader__button">
-										<img src="@img/icons/download.svg" alt="download">
-									</div>
-								</div>
-								<div class="customize-mints__button button">
-									<div class="button__text">mint</div>
-								</div>
-							</div>
-						</div>
+						@@include('html/customize/preview.html')
 					</div>
 				</div>
 			</div>

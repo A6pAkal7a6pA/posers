@@ -1,0 +1,25 @@
+.selects {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	margin-bottom: 23px;
+	&__number {
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 18px;
+		color: #7a7c7f;
+	}
+
+	&__variant {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 18px;
+		color: #7a7c7f;
+	}
+
+	&__square {
+		width: 5px;
+		height: 5px;
+		background: rgba(#000000, 0.1);
+	}
+}

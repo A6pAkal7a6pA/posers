@@ -1,0 +1,39 @@
+.customize-downloader {
+	border-style: solid;
+	border-width: 5px;
+	border-color: #000;
+	border-image-slice: 2;
+	border-image-width: 1;
+	border-image-outset: 0;
+	border-image-source: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='6' height='6'><path d='M0 2h2v2H0zM2 0h2v2H2zM4 2h2v2H4zM2 4h2v2H2z' fill='%23000' /></svg>");
+	background-clip: padding-box;
+	background-origin: content-box;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-width: 280px;
+
+	&__input {
+		padding: 11px 19px;
+		input {
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 18px;
+			color: #000000;
+			width: 100%;
+			&::placeholder {
+				color: rgba(#000000, 0.3);
+			}
+		}
+	}
+
+	&__button {
+		padding: 11px 9px;
+		border-left: 5px solid #000;
+		background-color: #9eca58;
+		img {
+			max-width: 21px;
+		}
+	}
+}

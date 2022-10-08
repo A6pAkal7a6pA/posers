@@ -31,7 +31,6 @@ section {
 }
 html,
 body {
-	height: 100%;
 	width: 100%;
 }
 body {
@@ -47,6 +46,7 @@ input,
 button,
 textarea {
 	font-family: $fontfamilySilkscreen;
+	background: none;
 }
 input::-ms-clear {
 	display: none;

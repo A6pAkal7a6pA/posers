@@ -1,14 +1,22 @@
-.swap main {
-	.swap__inner {
+@import "../components/swap/filters.scss";
+@import "../components/swap/header.scss";
+@import "../components/swap/market.scss";
+@import "../components/swap/posts.scss";
+@import "../components/swap/selects.scss";
+@import "../components/swap/summary.scss";
+@import "../components/swap/swap_wallet.scss";
+@import "../components/swap/tabs.scss";
+
+.swap {
+	padding: 65px 0 0 0;
+	&__inner {
 		display: flex;
 		gap: 5px;
 		position: relative;
 		border-style: solid;
 		border-width: 5px;
 		border-color: #000;
-		padding: 0.25rem;
 		border-image-outset: 0;
-		border-image-width: 2;
-		border-image-slice: 12;
+		border-image-width: 5px;
 	}
 }

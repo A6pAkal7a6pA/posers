@@ -1,0 +1,15 @@
+.tabs {
+	display: flex;
+	gap: 32px;
+	&__item {
+		border: 5px solid transparent;
+		padding-bottom: 8px;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 18px;
+		color: #000000;
+		&_active {
+			border-bottom: 5px solid #9eca58;
+		}
+	}
+}

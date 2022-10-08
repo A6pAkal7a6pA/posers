@@ -1,0 +1,84 @@
+.posts {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 30px;
+	max-width: 928px;
+	margin: 0 auto;
+	&__item {
+		max-width: 160px;
+		max-height: 260px;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		background: rgba(255, 255, 255, 0.5);
+		position: relative;
+		border: 5px solid rgba(255, 255, 255, 0.5);
+		background-clip: content-box;
+		&_active {
+			border: 5px solid rgba(255, 142, 217, 1);
+		}
+	}
+
+	&__image {
+		max-width: 160px;
+		max-height: 160px;
+		margin-bottom: 16px;
+		position: relative;
+		border-style: solid;
+		border-width: 5px;
+		border-color: #000;
+		border-image-outset: 0;
+		border-image-width: 5px;
+		margin: -5px -5px 0 -5px;
+	}
+
+	&__img {
+		width: 100%;
+		max-width: 100%;
+		object-fit: cover;
+	}
+
+	&__title {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 15px;
+		color: #7a7c7f;
+		margin-bottom: 4px;
+		padding: 0 12px;
+	}
+
+	&__serial {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 18px;
+		color: #000000;
+		margin-bottom: 21px;
+		padding: 0 12px;
+	}
+
+	&__money {
+		display: flex;
+		justify-content: flex-end;
+		gap: 4px;
+		padding: 0 12px;
+	}
+
+	&__position {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 15px;
+		color: #7a7c7f;
+	}
+
+	&__amount {
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 15px;
+		color: #000000;
+	}
+
+	&__coin {
+	}
+}
