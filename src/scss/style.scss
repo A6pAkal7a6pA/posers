@@ -28,7 +28,8 @@
 	border-image-source: url("@img/icons/square.svg");
 }
 
-.posts__item_active {
+.posts__item_before,
+.posts__item_after {
 	.posts__image.border-rectangle {
 		border-image-source: url("@img/icons/square-opacity.svg");
 	}

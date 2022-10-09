@@ -83,4 +83,8 @@
 		max-width: 230px;
 		padding: 35px 10px;
 	}
+	@media (max-width: 1024px) {
+		// position: absolute;
+		display: none;
+	}
 }

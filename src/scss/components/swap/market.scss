@@ -76,6 +76,17 @@
 			order: 1;
 		}
 	}
-	@media (max-width: 1024px) {
+	@media (max-width: 570px) {
+		&__inner {
+			padding: 16px 0;
+		}
+	}
+	@media (max-width: 430px) {
+		&__body {
+			padding: 15px 0 0 0;
+		}
+		&__head {
+			margin-bottom: 10px;
+		}
 	}
 }

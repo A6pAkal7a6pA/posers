@@ -1,6 +1,12 @@
 .tabs {
 	display: flex;
 	gap: 32px;
+	overflow-x: auto;
+	-ms-overflow-style: none; /* Internet Explorer 10+ */
+	scrollbar-width: none; /* Firefox */
+	&::-webkit-scrollbar {
+		display: none; /* Safari and Chrome */
+	}
 	&__item {
 		border: 5px solid transparent;
 		padding-bottom: 8px;
@@ -8,6 +14,7 @@
 		font-size: 14px;
 		line-height: 18px;
 		color: #000000;
+		white-space: nowrap;
 		&_active {
 			border-bottom: 5px solid #9eca58;
 		}

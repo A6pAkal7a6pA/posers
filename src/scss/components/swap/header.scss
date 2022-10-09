@@ -1,5 +1,6 @@
 .header {
 	margin-bottom: 62px;
+	position: relative;
 	&__inner {
 		display: flex;
 		align-items: center;
@@ -23,6 +24,11 @@
 		img {
 			max-width: 30px;
 		}
+		&_pc {
+		}
+		&_mob {
+			display: none;
+		}
 	}
 
 	&__logo {
@@ -31,6 +37,9 @@
 		line-height: 41px;
 		letter-spacing: -0.1em;
 		color: #000000;
+	}
+	&__notification {
+		display: none;
 	}
 
 	&__info {
@@ -52,5 +61,68 @@
 	}
 	@media (max-width: 1440px) {
 		margin: 0 0 30px 0;
+	}
+	@media (max-width: 1060px) {
+		padding: 12px 0 16px 0;
+	}
+	@media (max-width: 1024px) {
+		&__info {
+			display: none;
+		}
+	}
+	@media (max-width: 570px) {
+		padding-top: 68px;
+		margin: 0;
+		&__inner {
+			flex-direction: column;
+			gap: 16px;
+		}
+		&__notification {
+			display: block;
+			order: 3;
+			margin: 0 8px;
+		}
+		&__logo {
+			order: 2;
+			flex-grow: 1;
+			font-size: 24px;
+			line-height: 31px;
+		}
+		&__sublogo {
+			order: 1;
+			img {
+				max-width: 40px;
+			}
+			&_pc {
+				display: none;
+			}
+			&_mob {
+				display: block;
+			}
+		}
+		&__manage {
+			max-width: none;
+			gap: 8px;
+			justify-content: flex-start;
+			position: fixed;
+			left: 0;
+			top: 0;
+			background: #ffffff;
+			padding: 12px;
+			z-index: 5;
+		}
+		&__burger {
+			order: 4;
+		}
+		&__action {
+			width: 100%;
+		}
+		.button {
+			width: 100%;
+			text-align: center;
+			padding: 11px 15px;
+			font-size: 14px;
+			line-height: 18px;
+		}
 	}
 }

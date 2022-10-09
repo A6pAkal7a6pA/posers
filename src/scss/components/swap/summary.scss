@@ -16,6 +16,46 @@
 		margin-bottom: 64px;
 	}
 
+	&__changers {
+		display: none;
+		gap: 8px;
+		align-items: center;
+	}
+
+	&__changer {
+		width: 24px;
+		height: 24px;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 15px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #000000;
+		&_before {
+			background: #ff8ed9;
+		}
+
+		&_arrow {
+			max-width: 15px;
+		}
+
+		&_after {
+			background: #e3e3e1;
+			&_active {
+				background: #9eca58;
+			}
+		}
+	}
+
+	&__hidder {
+		width: 9px;
+		height: 15px;
+		background: url("../img/icons/arrow-down.svg") center / contain no-repeat;
+		&_open {
+			transform: rotate(180deg);
+		}
+	}
 	&__title {
 		font-weight: 700;
 		font-size: 24px;
@@ -148,6 +188,15 @@
 			height: 3px;
 			background: #000000;
 		}
+		@media (max-width: 400px) {
+			&__image {
+				max-width: 40px;
+			}
+			&__serial {
+				font-size: 12px;
+				line-height: 15px;
+			}
+		}
 	}
 	@media (max-width: 1630px) {
 		padding: 24px 15px;
@@ -161,6 +210,58 @@
 			&_after {
 				padding: 16px 8px;
 			}
+		}
+	}
+	@media (max-width: 1024px) {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		max-height: 82.4%;
+		max-width: none;
+		padding: 24px 34px;
+		&::before {
+			content: "";
+			width: 100%;
+			position: absolute;
+			height: 5px;
+			left: 0;
+			top: 0;
+		}
+		.summary {
+			&__head {
+				gap: 8px;
+				margin-bottom: 0;
+			}
+		}
+		&__subhead {
+			display: none;
+		}
+		&__content {
+			padding: 21px 0 15px 0;
+		}
+		&__changers {
+			display: flex;
+		}
+		&__modify {
+			margin-left: 16px;
+			flex-grow: 1;
+			flex-shrink: 1;
+		}
+	}
+
+	@media (max-width: 470px) {
+		padding: 24px 16px;
+		&__separator {
+			padding: 24px 0;
+		}
+		&__modify {
+			margin-left: 0px;
+		}
+	}
+	@media (max-width: 400px) {
+		&__title {
+			font-size: 18px;
+			line-height: 23px;
 		}
 	}
 }

@@ -15,10 +15,27 @@
 		border-image-outset: 0;
 		border-image-width: 5px;
 	}
+	.container {
+		max-width: 1700px;
+		padding: 0 15px;
+		margin: 0 auto;
+	}
 	@media (max-width: 1440px) {
 		padding: 45px 0 0 0;
 	}
 	@media (max-width: 1060px) {
 		padding: 30px 0 0 0;
+	}
+	@media (max-width: 1060px) {
+		padding: 0;
+	}
+	@media (max-width: 570px) {
+		&__inner {
+			border-width: 0;
+		}
+		.container {
+			max-width: none;
+			padding: 0 12px;
+		}
 	}
 }
