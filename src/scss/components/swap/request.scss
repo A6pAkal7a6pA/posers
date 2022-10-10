@@ -1,0 +1,144 @@
+.swap-request {
+	background: #efefed;
+	width: 100%;
+	height: calc(100vh - 65px);
+	position: absolute;
+	left: 0;
+	top: 65px;
+	padding: 16px;
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		gap: 24px;
+		height: 100%;
+	}
+
+	&__title {
+		font-weight: 700;
+		font-size: 20px;
+		line-height: 26px;
+		letter-spacing: -0.04em;
+		color: #000000;
+		order: 1;
+	}
+
+	&__wallet {
+		display: flex;
+		align-items: center;
+		gap: 8px;
+		order: 3;
+	}
+
+	&__number {
+		width: 24px;
+		height: 24px;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 15px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		color: #000000;
+		background: #e3e3e1;
+	}
+
+	&__destination {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 18px;
+		color: #7a7c7f;
+	}
+
+	&__token {
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 18px;
+	}
+	.market {
+		&__tabs {
+		}
+	}
+
+	.tabs {
+		order: 2;
+		flex-shrink: 0;
+		&__item {
+			&_active {
+			}
+		}
+	}
+
+	.summary {
+		&__content {
+			order: 4;
+			overflow-y: auto;
+		}
+
+		&__items {
+			&_private {
+			}
+
+			&_before {
+			}
+
+			&_after {
+			}
+		}
+
+		&__item {
+		}
+
+		&__separator {
+		}
+	}
+	.summary-item {
+		&__image {
+		}
+
+		&__content {
+		}
+
+		&__title {
+		}
+
+		&__serial {
+		}
+
+		&__delete {
+		}
+	}
+
+	&__buttons {
+		order: 5;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__button {
+		text-align: center;
+		width: 100%;
+		padding: 11px 20px;
+		&_green {
+			background-color: #9ECA58;
+		}
+		&_purple {
+			background-color: #BB94DE;
+		}
+		&_success {
+
+		}
+
+		&_cancel {
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 18px;
+			color: #7a7c7f;
+		}
+	}
+	.button {
+		&__text {
+		}
+	}
+}

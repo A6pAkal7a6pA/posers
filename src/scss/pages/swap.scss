@@ -2,13 +2,16 @@
 @import "../components/swap/header.scss";
 @import "../components/swap/market.scss";
 @import "../components/swap/summary.scss";
+@import "../components/swap/request.scss";
+@import "../components/swap/request_notification.scss";
 
 .swap {
 	padding: 65px 0 0 0;
+	width: 100%;
 	&__inner {
 		display: flex;
 		gap: 5px;
-		position: relative;
+		// position: relative;
 		border-style: solid;
 		border-width: 5px;
 		border-color: #000;

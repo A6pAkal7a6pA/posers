@@ -69,8 +69,7 @@
 		&__info {
 			display: none;
 		}
-	}
-	@media (max-width: 570px) {
+
 		padding-top: 68px;
 		margin: 0;
 		&__inner {
@@ -80,7 +79,22 @@
 		&__notification {
 			display: block;
 			order: 3;
-			margin: 0 8px;
+			padding: 8px 9px;
+			position: relative;
+			&_open {
+				background: #efefed;
+			}
+			&_exist {
+				&::before {
+					content: "";
+					width: 5px;
+					height: 5px;
+					position: absolute;
+					left: 9px;
+					top: 8px;
+					background: #9eca58;
+				}
+			}
 		}
 		&__logo {
 			order: 2;

@@ -47,8 +47,10 @@
 		.selects__square {
 			display: block;
 		}
-		&__wallet {
-			display: block;
+		&_wallet {
+			.selects__wallet {
+				display: block;
+			}
 		}
 	}
 	@media (max-width: 430px) {
