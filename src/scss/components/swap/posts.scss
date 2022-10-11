@@ -19,6 +19,7 @@
 		position: relative;
 		border: 5px solid rgba(255, 255, 255, 0.5);
 		background-clip: content-box;
+		cursor: pointer;
 		&_before {
 			border: 5px solid rgba(255, 142, 217, 1);
 		}
@@ -105,6 +106,7 @@
 	}
 	@media (max-width: 1024px) {
 		max-width: 100%;
+		padding-bottom: 70px;
 		&__item {
 			&_after {
 				border: 5px solid #9ECA58;

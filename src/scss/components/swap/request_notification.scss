@@ -10,9 +10,7 @@
 	z-index: 3;
 	max-height: 50%;
 	display: none;
-	&_showed {
-		display: block;
-	}
+
 	&__inner {
 		display: flex;
 		flex-direction: column;
@@ -54,5 +52,10 @@
 		line-height: 18px;
 		color: #000000;
 		text-align: right;
+	}
+	@media (max-width: 1024px) {
+		&_showed {
+			display: block;
+		}
 	}
 }

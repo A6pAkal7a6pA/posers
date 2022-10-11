@@ -1,21 +1,17 @@
-<div class="summary summary_private">
-	<div class="summary__inner">
-		<div class="summary__head">
-			<div class="summary__title">summary</div>
-			<div class="summary__changers">
-				<div class="summary__changer summary__changer_before">2</div>
-				<div class="summary__changer_arrow">
-					<img src="@img/icons/changer-arrow.svg" alt="arrow">
-				</div>
-				<div class="summary__changer summary__changer_after summary__changer_after_active">1</div>
-			</div>
-			<div class="summary__modify">clear</div>
-			<div class="summary__hidder"></div>
+<div class="swap-request">
+	<div class="swap-request__inner">
+		<div class="swap-request__title">
+			Requests
+		</div>
+		<div class="market__tabs tabs">
+			<div class="tabs__item">incoming</div>
+			<div class="tabs__item tabs__item_active">sent</div>
 		</div>
 
-		<div class="summary__subhead">
-			<p>Swap <span>2 item</span></p>
-			<p>for <span>1 item</span></p>
+		<div class="swap-request__wallet">
+			<div class="swap-request__number">1</div>
+			<div class="swap-request__destination">to</div>
+			<div class="swap-request__token underline">0x0BD...9FD3</div>
 		</div>
 
 		<div class="summary__content">
@@ -47,7 +43,7 @@
 				<img src="@img/icons/summary_arrow.svg" alt="arrow">
 			</div>
 
-			<div class="summary__items summary__items_private summary__items_after">
+			<div class="summary__items summary__items_private">
 				<div class="summary__item summary-item">
 					<div class="summary-item__image">
 						<img src="@img/nfts/nft1.png" alt="nft">
@@ -61,8 +57,12 @@
 			</div>
 		</div>
 
-		<button class="summary__button button">
-			<div class="button__text">swap in private</div>
-		</button>
+		<div class="swap-request__buttons">
+			<button class="swap-request__button  swap-request__button_success swap-request__button_purple button">
+				<div class="button__text">withdraw request</div>
+			</button>
+			<div class="swap-request__button swap-request__button_cancel">add more to the pool</div>
+		</div>
+
 	</div>
 </div>

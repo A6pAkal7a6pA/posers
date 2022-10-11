@@ -57,6 +57,7 @@
 		width: 9px;
 		height: 15px;
 		background: url("../img/icons/arrow-down.svg") center / contain no-repeat;
+		cursor: pointer;
 	}
 	&__title {
 		font-weight: 700;
@@ -71,6 +72,7 @@
 		font-size: 14px;
 		line-height: 18px;
 		color: #7a7c7f;
+		cursor: pointer;
 	}
 	&__content {
 		flex-grow: 1;
@@ -103,7 +105,7 @@
 		color: #000000;
 		padding: 11px 14px;
 		&_green {
-			background-color: #9ECA58;
+			background-color: #9eca58;
 		}
 		&_rose {
 			background-color: #ff8ed9;
@@ -200,6 +202,8 @@
 		&_wallet {
 			.swap-wallet {
 				display: block;
+				padding: 0;
+				text-align: center;
 			}
 		}
 		&::before {
@@ -289,6 +293,7 @@
 		width: 12px;
 		height: 3px;
 		background: #000000;
+		cursor: pointer;
 	}
 	@media (max-width: 400px) {
 		&__image {
