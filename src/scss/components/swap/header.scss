@@ -1,5 +1,5 @@
 .header {
-	margin-bottom: 62px;
+	margin-bottom: 55px;
 	position: relative;
 	&__inner {
 		display: flex;
@@ -13,11 +13,35 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		.header__notification {
+			display: none;
+		}
 	}
 	&__action {
 		display: flex;
 		align-items: center;
-		gap: 65px;
+		gap: 24px;
+		.header__notification {
+			display: block;
+		}
+	}
+	&__notification {
+		padding: 20px;
+		position: relative;
+		&_open {
+			background: #efefed;
+		}
+		&_exist {
+			&::before {
+				content: "";
+				width: 5px;
+				height: 5px;
+				position: absolute;
+				left: 20px;
+				top: 20px;
+				background: #9eca58;
+			}
+		}
 	}
 
 	&__sublogo {
@@ -37,9 +61,6 @@
 		line-height: 41px;
 		letter-spacing: -0.1em;
 		color: #000000;
-	}
-	&__notification {
-		display: none;
 	}
 
 	&__info {
@@ -69,18 +90,8 @@
 		&__info {
 			display: none;
 		}
-
-		padding-top: 68px;
-		margin: 0;
-		&__inner {
-			flex-direction: column;
-			gap: 16px;
-		}
 		&__notification {
-			display: block;
-			order: 3;
 			padding: 8px 9px;
-			position: relative;
 			&_open {
 				background: #efefed;
 			}
@@ -95,6 +106,12 @@
 					background: #9eca58;
 				}
 			}
+		}
+		padding-top: 68px;
+		margin: 0;
+		&__inner {
+			flex-direction: column;
+			gap: 16px;
 		}
 		&__logo {
 			order: 2;
@@ -124,12 +141,19 @@
 			background: #ffffff;
 			padding: 12px;
 			z-index: 5;
+			.header__notification {
+				order: 3;
+				display: block;
+			}
 		}
 		&__burger {
 			order: 4;
 		}
 		&__action {
 			width: 100%;
+			.header__notification {
+				display: none;
+			}
 		}
 		.button {
 			width: 100%;

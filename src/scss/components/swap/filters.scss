@@ -21,8 +21,7 @@
 			max-height: 100%;
 			position: absolute;
 			right: 20px;
-			top: 50%;
-			transform: translateY(-50%);
+			transform: translateY(50%);
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -54,17 +53,54 @@
 		justify-content: center;
 		gap: 24px;
 	}
+	.filters-dropdown {
+		display: none;
+		padding-bottom: 32px;
+		flex-direction: column;
+		gap: 24px;
+		align-items: center;
+		&__item {
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 18px;
+			color: #7a7c7f;
+			&_active {
+				color: #9eca58;
+				position: relative;
+				&::before {
+					content: '';
+					width: 15px;
+					height: 12px;
+					position: absolute;
+					left: -16px;
+					top: 50%;
+					transform: translate(-50%, -50%);
+					background: url('../img/icons/check-filter.svg') center / cover no-repeat;
+				}
+			}
+		}
+	}
 
 	&__item {
 		display: flex;
-		align-items: center;
+		flex-direction: column;
 		max-width: 100%;
 		max-height: 50px;
 		width: 100%;
 		height: 100%;
-		padding: 16px 20px;
+		padding: 11px 15px;
 		max-height: 100%;
 		cursor: pointer;
+		gap: 26px;
+
+		&_opened {
+			.filters-dropdown {
+				display: flex;
+			}
+			.filters__arrow_down {
+				transform: translateY(50%) rotate(-180deg);
+			}
+		}
 	}
 
 	&__text {
@@ -73,11 +109,23 @@
 		line-height: 18px;
 		color: #000000;
 	}
+	&_hidden {
+		max-width: 60px;
+		overflow: hidden;
+		.filters__title,
+		.filters__menu,
+		.filters__subtitle {
+			display: none;
+		}
+		.filters__arrow {
+			transform: rotate(-180deg);
+		}
+	}
+
 	@media (max-width: 1630px) {
 		padding: 35px 15px;
 		max-width: 250px;
 		&__item {
-
 		}
 	}
 	@media (max-width: 1060px) {

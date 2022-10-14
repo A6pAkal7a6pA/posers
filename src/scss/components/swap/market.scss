@@ -4,7 +4,6 @@
 @import "wallet.scss";
 
 .market {
-	max-width: 1100px;
 	width: 100%;
 	background: #efefed;
 	&__inner {
@@ -15,7 +14,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		padding: 0px 14px 0 40px;
+		padding: 0px 38px;
 		flex-wrap: wrap;
 		gap: 16px;
 	}
@@ -48,7 +47,7 @@
 	}
 
 	&__body {
-		padding: 23px 40px 0 40px;
+		padding: 23px 38px 0 38px;
 	}
 	.swap__wallet {
 
