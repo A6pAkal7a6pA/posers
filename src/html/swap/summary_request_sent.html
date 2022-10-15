@@ -1,0 +1,49 @@
+<div class="summary summary_private summary_swap summary_request">
+	<div class="summary__inner">
+		<div class="summary__head">
+			<div class="summary__title">summary</div>
+			<div class="summary__title summary__title_request">Requests</div>
+
+			<div class="tabs">
+				<div class="tabs__item">incoming</div>
+				<div class="tabs__item tabs__item_active">sent</div>
+			</div>
+
+			@@include('summary_changers.html', {"before": "2", "after": "1"})
+
+			<div class="summary__modify">clear</div>
+
+			@@include('summary_wallet.html', {"number": "1", "destination": "from", "token": "0x0BD...9FD3"})
+
+			<div class="summary__hidder summary__hidder_close"></div>
+		</div>
+
+		<div class="summary__subhead">
+			<p>Swap <span>2 item</span></p>
+			<p>for <span>1 item</span></p>
+		</div>
+
+		<div class="summary__content">
+			<div class="summary__items summary__items_private summary__items_before">
+				@@include('summary_item.html')
+				@@include('summary_item.html')
+			</div>
+
+			<div class="summary__separator">
+				<img src="@img/icons/summary_arrow.svg" alt="arrow">
+			</div>
+
+			<div class="summary__items summary__items_private summary__items_after">
+				@@include('summary_item.html')
+			</div>
+		</div>
+
+		<div class="summary__buttons">
+			<button class="summary__button summary__button_purple button">
+				<div class="button__text">withdraw request</div>
+			</button>
+			<div class="summary__button summary__button_cancel">add more to the pool</div>
+		</div>
+
+	</div>
+</div>

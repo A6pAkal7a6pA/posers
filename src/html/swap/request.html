@@ -1,68 +1,41 @@
 <div class="swap-request">
 	<div class="swap-request__inner">
-		<div class="swap-request__title">
-			Requests
-		</div>
-		<div class="market__tabs tabs">
-			<div class="tabs__item tabs__item_active">incoming</div>
-			<div class="tabs__item">sent</div>
-		</div>
-
-		<div class="swap-request__wallet">
-			<div class="swap-request__number">1</div>
-			<div class="swap-request__destination">from</div>
-			<div class="swap-request__token underline">0x0BD...9FD3</div>
-		</div>
-
-		<div class="summary__content">
-			<div class="summary__items summary__items_private summary__items_before">
-				<div class="summary__item summary-item">
-					<div class="summary-item__image">
-						<img src="@img/nfts/nft1.png" alt="nft">
-					</div>
-					<div class="summary-item__content">
-						<div class="summary-item__title">posersnft</div>
-						<div class="summary-item__serial">poser #4234</div>
-					</div>
-					<div class="summary-item__delete"></div>
+		<div class="swap-request__content swap-request__content_incoming">
+			<div class="swap-request__title">incoming requests</div>
+			<div class="swap-request__items">
+				<div class="swap-request__item swap-request__item_active">
+					@@include('summary_wallet.html', {"number": "1", "destination": "from", "token": "0x0BD...9FD3"})
+					@@include('request-checker.html')
 				</div>
-
-				<div class="summary__item summary-item">
-					<div class="summary-item__image">
-						<img src="@img/nfts/nft1.png" alt="nft">
-					</div>
-					<div class="summary-item__content">
-						<div class="summary-item__title">posersnft</div>
-						<div class="summary-item__serial">poser #4234</div>
-					</div>
-					<div class="summary-item__delete"></div>
+				<div class="swap-request__item">
+					@@include('summary_wallet.html', {"number": "2", "destination": "from", "token": "0x0BD...9FD3"})
+					@@include('request-checker.html')
 				</div>
-			</div>
-
-			<div class="summary__separator">
-				<img src="@img/icons/summary_arrow.svg" alt="arrow">
-			</div>
-
-			<div class="summary__items summary__items_private">
-				<div class="summary__item summary-item">
-					<div class="summary-item__image">
-						<img src="@img/nfts/nft1.png" alt="nft">
-					</div>
-					<div class="summary-item__content">
-						<div class="summary-item__title">posersnft</div>
-						<div class="summary-item__serial">poser #4234</div>
-					</div>
-					<div class="summary-item__delete"></div>
+				<div class="swap-request__item">
+					@@include('summary_wallet.html', {"number": "3", "destination": "from", "token": "0x0BD...9FD3"})
+					@@include('request-checker.html')
+				</div>
+				<div class="swap-request__item">
+					@@include('summary_wallet.html', {"number": "4", "destination": "from", "token": "0x0BD...9FD3"})
+					@@include('request-checker.html')
 				</div>
 			</div>
 		</div>
 
-		<div class="swap-request__buttons">
-			<button class="swap-request__button  swap-request__button_success swap-request__button_green button">
-				<div class="button__text">accept</div>
-			</button>
-			<div class="swap-request__button swap-request__button_cancel">reject</div>
-		</div>
+		<div class="market__line"></div>
 
+		<div class="swap-request__content swap-request__content_sent">
+			<div class="swap-request__title">sent requests</div>
+			<div class="swap-request__items">
+				<div class="swap-request__item swap-request__item_active">
+					@@include('summary_wallet.html', {"number": "1", "destination": "to", "token": "0x0BD...9FD3"})
+					@@include('request-checker.html')
+				</div>
+				<div class="swap-request__item">
+					@@include('summary_wallet.html', {"number": "2", "destination": "to", "token": "0x0BD...9FD3"})
+					@@include('request-checker.html')
+				</div>
+			</div>
+		</div>
 	</div>
 </div>

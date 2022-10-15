@@ -49,8 +49,12 @@
 	&__body {
 		padding: 23px 38px 0 38px;
 	}
-	.swap__wallet {
-
+	&_request {
+		.swap-wallet,
+		.selects,
+		.posts {
+			display: none;
+		}
 	}
 	@media (max-width: 1630px) {
 		&__inner {

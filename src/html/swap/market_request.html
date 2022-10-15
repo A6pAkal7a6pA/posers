@@ -1,0 +1,26 @@
+<div class="market market_request">
+	<div class="market__inner">
+		<div class="market__head">
+			<div class="market__name">
+				<div class="market__title">Requests</div>
+				<div class="market__subtitle">exchange nfts with your frens</div>
+			</div>
+
+			<div class="market__line"></div>
+			
+			<div class="market__tabs tabs">
+				<div class="tabs__item tabs__item_active">private swap</div>
+				<div class="tabs__item">Get from the pool</div>
+				<div class="tabs__item">Put in the pool</div>
+			</div>
+		</div>
+
+		@@include('wallet.html')
+
+		<div class="market__body">
+			@@include('selects.html')
+			@@include('posts.html')
+			@@include('request.html')
+		</div>
+	</div>
+</div>

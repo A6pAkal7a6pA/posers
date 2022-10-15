@@ -10,9 +10,8 @@
 
 .wrapper {
 	width: 100%;
-	min-height: 100vh;
+	// height: 100vh;
 }
-
 .bold {
 	font-weight: 700;
 }
@@ -26,6 +25,14 @@
 
 .border-rectangle {
 	border-image-source: url("@img/icons/square.svg");
+}
+
+.backgroud_green {
+	background-color: #9ECA58;
+}
+
+.backgroud_rose {
+	background-color: #FF8ED9;
 }
 
 .posts__item_before,

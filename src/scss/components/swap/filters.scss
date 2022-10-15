@@ -3,8 +3,9 @@
 	width: 100%;
 	background: #efefed;
 	padding: 35px 24px;
-
+	height: 100%;
 	&__inner {
+		height: 100%;
 		position: relative;
 	}
 
@@ -45,13 +46,16 @@
 	}
 
 	&__menu {
+		// height: 568px;
+		height: 100%;
 	}
 
 	&__list {
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 		gap: 24px;
+		// height: calc(63vh - 188.5px + 23px + 58px + 23px + 32px);
+		overflow-y: auto;
 	}
 	.filters-dropdown {
 		display: none;

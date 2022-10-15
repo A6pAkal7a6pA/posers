@@ -2,13 +2,7 @@
 	<div class="summary__inner">
 		<div class="summary__head">
 			<div class="summary__title">summary</div>
-			<div class="summary__changers">
-				<div class="summary__changer summary__changer_before">1</div>
-				<!-- <div class="summary__changer_arrow">
-					<img src="@img/icons/changer-arrow.svg" alt="arrow">
-				</div>
-				<div class="summary__changer summary__changer_after summary__changer_after_active">1</div> -->
-			</div>
+			@@include('../summary_changers.html', {"before": "1", "after": "1"})
 			<div class="summary__modify">clear</div>
 			<div class="summary__hidder"></div>
 		</div>

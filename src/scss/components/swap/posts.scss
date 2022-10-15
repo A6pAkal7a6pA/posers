@@ -1,4 +1,7 @@
 .posts {
+	// height: 592px;
+	height: 59vh;
+	overflow-y: auto;
 	&__inner {
 		display: flex;
 		align-items: center;

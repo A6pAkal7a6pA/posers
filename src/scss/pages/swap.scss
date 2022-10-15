@@ -8,6 +8,8 @@
 .swap {
 	padding: 65px 0 0 0;
 	width: 100%;
+	overflow: hidden;
+	height: 100vh;
 	&__inner {
 		display: flex;
 		gap: 5px;
@@ -17,6 +19,8 @@
 		border-color: #000;
 		border-image-outset: 0;
 		border-image-width: 5px;
+		// height: calc(100vh - 188.5px);
+
 	}
 	&_notify {
 		.request-notify {
@@ -27,6 +31,7 @@
 		max-width: 1700px;
 		padding: 0 15px;
 		margin: 0 auto;
+		height: 100%;
 	}
 	@media (max-width: 1440px) {
 		padding: 45px 0 0 0;
