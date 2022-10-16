@@ -10,21 +10,22 @@
 	width: 100%;
 	overflow: hidden;
 	height: 100vh;
+	display: flex;
+	flex-direction: column;
 	&__inner {
 		display: flex;
 		gap: 5px;
-		// position: relative;
+		width: 100%;
 		border-style: solid;
 		border-width: 5px;
 		border-color: #000;
 		border-image-outset: 0;
 		border-image-width: 5px;
-		// height: calc(100vh - 188.5px);
-
+		height: 100%;
 	}
 	&_notify {
 		.request-notify {
-			display: block
+			display: block;
 		}
 	}
 	.container {
@@ -32,6 +33,8 @@
 		padding: 0 15px;
 		margin: 0 auto;
 		height: 100%;
+		overflow-y: auto;
+		width: 100%;
 	}
 	@media (max-width: 1440px) {
 		padding: 45px 0 0 0;

@@ -5,9 +5,14 @@
 
 .market {
 	width: 100%;
+	height: 100%;
 	background: #efefed;
 	&__inner {
+		height: 100%;
 		padding: 24px 10px;
+		display: flex;
+		flex-direction: column;
+
 	}
 
 	&__head {
@@ -47,7 +52,17 @@
 	}
 
 	&__body {
-		padding: 23px 38px 0 38px;
+		height: 100%;
+		padding: 0px 38px 0 38px;
+		margin-top: 23px;
+		display: flex;
+		flex-direction: column;
+		overflow-y: auto;
+		-ms-overflow-style: none; /* Internet Explorer 10+ */
+		scrollbar-width: none; /* Firefox */
+		&::-webkit-scrollbar {
+			display: none; /* Safari and Chrome */
+		}
 	}
 	&_request {
 		.swap-wallet,
@@ -64,7 +79,8 @@
 			padding: 0 15px 0 15px;
 		}
 		&__body {
-			padding: 15px 15px 0 15px;
+			padding: 0px 15px 0 15px;
+			margin-top: 15px;
 		}
 		&__line {
 			width: calc(100% - 20px);
@@ -95,7 +111,8 @@
 	}
 	@media (max-width: 430px) {
 		&__body {
-			padding: 15px 0 0 0;
+			padding: 0;
+			margin-top: 15px;
 		}
 		&__head {
 			margin-bottom: 10px;

@@ -5,6 +5,11 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
+		max-width: 1700px;
+		padding: 0 15px;
+		margin: 0 auto;
+		height: 100%;
+		width: 100%;
 	}
 
 	&__manage {
@@ -29,11 +34,9 @@
 		padding: 20px;
 		position: relative;
 		&_open {
-			background: #efefed;
 		}
 		&_exist {
 			&::before {
-				content: "";
 				width: 5px;
 				height: 5px;
 				position: absolute;
@@ -78,6 +81,21 @@
 		background-color: #9eca58;
 		&::after {
 			content: "";
+		}
+	}
+	&_notify {
+		.header__notification {
+			&_open {
+				background: #efefed;
+			}
+			&_exist {
+				&::before {
+					content: "";
+				}
+			}
+		}
+		.request-notify {
+			display: block;
 		}
 	}
 	@media (max-width: 1440px) {

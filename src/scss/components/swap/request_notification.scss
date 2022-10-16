@@ -10,6 +10,7 @@
 	z-index: 3;
 	max-height: 50%;
 	border: 5px solid rgba($color: #000000, $alpha: 0.05);
+	display: none;
 	&::before,
 	&::after {
 		content: '';
@@ -77,8 +78,11 @@
 		text-align: right;
 	}
 	@media (max-width: 1024px) {
-		&_showed {
-			// display: block;
+		position: fixed;
+		width: calc(100% - 30px);
+		top: 65px;
+		&::after {
+			display: none;
 		}
 	}
 }
