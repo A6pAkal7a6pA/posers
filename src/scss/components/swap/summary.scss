@@ -41,6 +41,7 @@
 		color: #000000;
 		&_before {
 			background: #ff8ed9;
+			display: none;
 		}
 
 		&_arrow {
@@ -305,6 +306,7 @@
 			.tabs {
 				display: flex;
 			}
+			
 		}
 		&::before {
 			content: "";
