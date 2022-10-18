@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 @@include('html/head.html', {
-"title": "Swap"
+"title": "Tool"
 })
 
 <body>
 	<div class="wrapper">
+
 		<main class="main">
 			@@include('html/swap/header.html')
+			@@include('html/frames/tool_yellow_1.html')
 			<div class="main__inner">
 				<!-- @@include('html/customize/connect_wallet.html') -->
+
 				<div class="main__customize customize">
 					@@include('html/customize/head.html')
 
-					@@include('html/customize/welcome.html')
+					<div class="customize-gallery">
 
-					<div class="customize-switchers">
-						<div class="customize-switchers__item customize-switchers__item_prev button button_disabled">
-							<img src="@img/icons/shevron-left.svg" alt="left">
+						<div class="customize-traits">
+							<div class="customize-traits__title">choose traits</div>
+							@@include('html/customize/choose_slider.html')
+							@@include('html/customize/miniatures.html')
+							@@include('html/customize/navigation.html')
 						</div>
-						<div class="customize-switchers__item customize-switchers__item_next button">
-							<img src="@img/icons/shevron-right.svg" alt="right">
-						</div>
+
+						<div class="customize-gallery__line"></div>
+
+						@@include('html/customize/preview.html')
 					</div>
 				</div>
 				@@include('html/customize/copyright.html')

@@ -7,22 +7,27 @@
 <body>
 	<div class="wrapper">
 		<main class="main">
+			@@include('html/frames/before_green.html')
 			@@include('html/swap/header.html')
 			<div class="main__inner">
 				<!-- @@include('html/customize/connect_wallet.html') -->
 				<div class="main__customize customize">
 					@@include('html/customize/head.html')
 
-					@@include('html/customize/welcome.html')
+					@@include('html/customize/important.html')
 
 					<div class="customize-switchers">
-						<div class="customize-switchers__item customize-switchers__item_prev button button_disabled">
+						<div class="customize-switchers__item customize-switchers__item_prev button">
 							<img src="@img/icons/shevron-left.svg" alt="left">
 						</div>
 						<div class="customize-switchers__item customize-switchers__item_next button">
 							<img src="@img/icons/shevron-right.svg" alt="right">
 						</div>
 					</div>
+
+					<button class="customize__next button">
+						<div class="button__text">LFG</div>
+					</button>
 				</div>
 				@@include('html/customize/copyright.html')
 			</div>

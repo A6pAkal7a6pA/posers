@@ -25,13 +25,16 @@
 		font-size: 18px;
 		line-height: 23px;
 		color: #000000;
+		position: relative;
 		&::before {
 			content: "";
 			width: 5px;
 			height: 5px;
 			position: absolute;
-			left: 0;
+			left: -14px;
 			top: 0;
+			background: #000000;
+			transform: translateY(100%);
 		}
 	}
 

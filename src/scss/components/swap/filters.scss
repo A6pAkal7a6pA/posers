@@ -2,7 +2,7 @@
 	max-width: 280px;
 	width: 100%;
 	background: #efefed;
-	padding: 35px 24px;
+	padding: 35px 24px 0 24px;
 	height: 100%;
 	
 	&__inner {
@@ -75,12 +75,13 @@
 		padding-bottom: 32px;
 		flex-direction: column;
 		gap: 24px;
-		align-items: center;
+		align-items: flex-start;
 		&__item {
 			font-weight: 400;
 			font-size: 14px;
 			line-height: 18px;
 			color: #7a7c7f;
+			padding-left: 33px;
 			&_active {
 				color: #9eca58;
 				position: relative;
@@ -89,9 +90,9 @@
 					width: 15px;
 					height: 12px;
 					position: absolute;
-					left: -16px;
+					left: 0px;
 					top: 50%;
-					transform: translate(-50%, -50%);
+					transform: translate(0%, -50%);
 					background: url('../img/icons/check-filter.svg') center / cover no-repeat;
 				}
 			}

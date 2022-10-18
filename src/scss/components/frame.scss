@@ -35,8 +35,9 @@
 	&__text {
 		flex-grow: 1;
 		display: flex;
-		align-items: center;
-		justify-content: center;
+		align-items: flex-start;
+		justify-content: flex-start;
+
 		color: #3e5c0d;
 		&::before,
 		&::after {
@@ -53,6 +54,12 @@
 		&::after {
 			right: 0;
 		}
+	}
+	&__presses {
+		display: flex;
+		justify-content: flex-end;
+		gap: 24px;
+		align-items: center;
 	}
 	&__press {
 		color: #3e5c0d;

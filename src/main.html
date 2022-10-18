@@ -6,10 +6,11 @@
 <body>
 	<div class="wrapper">
 		<main class="main">
+			@@include('html/swap/header.html')
 			<div class="main__inner">
 				<div class="main__content">
 					<div class="main__info">
-						@@include('html/customize/connect_wallet.html')
+						<!-- @@include('html/customize/connect_wallet.html') -->
 						@@include('html/customize/doodles.html')
 
 						<div class="main__texts">
@@ -119,11 +120,7 @@
 					</div>
 				</div>
 
-				<div class="main__copyright copyright">
-					<div class="copyright__inner">
-						Mint is only available to real POSers. We use an anti-bot system for mint. Be careful.
-					</div>
-				</div>
+				@@include('html/customize/copyright.html')
 
 			</div>
 		</main>
