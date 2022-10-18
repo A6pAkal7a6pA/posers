@@ -13,22 +13,21 @@
 	display: none;
 	&::before,
 	&::after {
-		content: '';
+		content: "";
 		position: absolute;
 		top: 0;
 		left: 50%;
-		background-color: #9ECA58;
+		background-color: #9eca58;
 	}
 	&::before {
 		width: calc(100% + 10px);
 		height: 5px;
-
 		transform: translate(-50%, -100%);
 		border-style: solid;
 		border-image-outset: 0;
-    border-image-width: 1.7%;
-    border-image-source: url(../img/icons/square-opacity.svg);
-    border-image-slice: 30% 60%;
+		border-image-width: 1.7%;
+		border-image-source: url(../img/icons/square-opacity.svg);
+		border-image-slice: 30% 60%;
 	}
 	&::after {
 		width: 10px;
@@ -42,13 +41,13 @@
 		height: 100%;
 		position: relative;
 		&::before {
-			content: '';
+			content: "";
 			width: 10px;
 			height: 10px;
 			position: absolute;
 			left: 0;
 			top: 0;
-			background: #9ECA58;
+			background: #9eca58;
 			transform: translate(-100%, -100%);
 		}
 	}

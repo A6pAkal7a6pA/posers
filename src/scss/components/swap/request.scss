@@ -16,7 +16,7 @@
 		gap: 24px;
 		&_incoming {
 			.summary-wallet__number {
-				background-color: #9ECA58;
+				background-color: #9eca58;
 			}
 			.swap-request__item_active {
 				background-color: rgba(158, 202, 88, 0.1);
@@ -24,12 +24,11 @@
 		}
 		&_sent {
 			.summary-wallet__number {
-				background-color: #FF8ED9;
+				background-color: #ff8ed9;
 			}
 			.swap-request__item_active {
 				background-color: rgba(255, 142, 217, 0.1);
 			}
-
 		}
 	}
 
@@ -51,16 +50,6 @@
 		align-items: center;
 		justify-content: space-between;
 		cursor: pointer;
-	}
-}
-.summary-wallet {
-	&__number {
-	}
-
-	&__destination {
-	}
-
-	&__token {
 	}
 }
 .request-checker {

@@ -69,8 +69,6 @@
 		&::-webkit-scrollbar {
 			display: none; /* Safari and Chrome */
 		}
-		// height: calc(63vh - 188.5px + 23px + 58px + 23px + 32px);
-		// overflow-y: auto;
 	}
 	.filters-dropdown {
 		display: none;
@@ -157,7 +155,6 @@
 		padding: 35px 10px;
 	}
 	@media (max-width: 1024px) {
-		// position: absolute;
 		display: none;
 	}
 }
